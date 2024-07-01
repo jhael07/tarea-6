@@ -27,7 +27,13 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Permite a tarea mobile acceder a tu ubicacion."
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true

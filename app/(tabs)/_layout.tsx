@@ -5,6 +5,7 @@ import {
   MaterialCommunityIcons,
 } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 
 const page = () => {
   return (
@@ -57,6 +58,19 @@ const page = () => {
             <FontAwesome
               name="university"
               size={26}
+              color={focused ? Colors.primary : "black"}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="clima"
+        options={{
+          title: "",
+          tabBarIcon: ({ focused }: any) => (
+            <MaterialCommunityIcons
+              name="weather-cloudy"
+              size={36}
               color={focused ? Colors.primary : "black"}
             />
           ),
